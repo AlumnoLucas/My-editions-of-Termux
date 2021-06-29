@@ -1,0 +1,23 @@
+#!/bin/bash
+setterm -foreground green
+echo "¿conect to SSH --hp or --bangho?"
+setterm -foreground white
+while [ -n "$1" ]; do 
+
+        case "$1" in
+
+    --hp)
+ssh lucas@192.168.0.240 -p 1234
+	;;
+   --bangho)
+ssh lucas@192.168.0.130 -p 22
+	;;
+  *)
+	echo "Option $1 not recognized" ;; 
+
+        esac
+
+        shift
+
+done
+
