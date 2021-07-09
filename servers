@@ -1,6 +1,6 @@
 #!/bin/bash
 setterm -foreground green
-echo "¿conect to SSH? --hp --bangho --blackarch"
+echo "¿conect to SSH? --hp --bangho --blackarch --termux"
 setterm -foreground white
 while [ -n "$1" ]; do 
 
@@ -16,7 +16,7 @@ ssh user@192.168.0.237 p 22
 ssh lucas@192.168.0.130 -p 22
 	;;
    --termux)
-ssh u0_a164@192.168.0.102 -p 3579
+ssh u0_a164@192.168.0.102 -p 22
 	;;
   *)
 	echo "Option $1 not recognized" ;; 
