@@ -10,7 +10,7 @@ while [ -n "$1" ]; do
 ssh lucas@192.168.0.240 -p 1234
 	;;
 --blackarch)
-ssh user@192.168.0.237 p 22
+ssh user@192.168.0.237 -p 22
 	;;
    --bangho)
 ssh lucas@192.168.0.130 -p 22
