@@ -1,0 +1,23 @@
+#!/bin/bash
+setterm -foreground green
+echo "-a activate vncserver | -k kill vnc session (reload)"
+setterm -foreground white
+while [ -n "$1" ]; do 
+
+        case "$1" in
+
+    -a)
+vncserver /dev/null 2>&1
+	;;
+    -k)
+vncserver -kill :1 /dev/null 2>&1
+echo "run again: $ vnc -a" 
+	;;
+  *)
+	echo "Option $1 not recognized" ;; 
+
+        esac
+
+        shift
+
+done
