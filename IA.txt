@@ -1,0 +1,12 @@
+curl -X POST https://api.openai.com/v1/engines/davinci-codex/completions \
+-H "Content-Type: application/json" \
+-H "Authorization: Bearer sk-...NRpq" \
+-d '{
+  "prompt": "Hola, ¿cómo estás?",
+  "temperature": 0.5,
+  "max_tokens": 50,
+  "top_p": 1,
+  "n": 1,
+  "stream": false,
+  "stop": "\n"
+}'
